@@ -17,7 +17,7 @@ src/
 ```
 
 ## Pré-requisitos
-- Java 17 ou superior
+- Java 21 ou superior
 - Maven 3.8+
 - Docker (opcional, para execução via docker-compose)
 
