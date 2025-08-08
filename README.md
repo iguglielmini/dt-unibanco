@@ -8,12 +8,20 @@ Este projeto é uma aplicação backend que expõe funcionalidades relacionadas 
 ## Estrutura do Projeto
 
 ```
-src/
-  main/
-    java/br/com/itau/challenge/balance/  # Código fonte principal
-    resources/                           # Arquivos de configuração
-  test/
-    java/br/com/itau/challenge/balance/  # Testes automatizados
+src/main/java/br/com/itau/challenge/balance/
+├── BalanceApplication.java               # Classe principal
+├── config/                               # Configurações (Swagger, SQS, JPA, etc.)
+├── controller/                           # REST controllers (entrada da API)
+├── consumer/                             # SQS listeners
+├── dto/                                  # Objetos de entrada e saída (Request/Response)
+├── exception/                            # Exceptions customizadas e handlers
+├── mapper/                               # Conversão entre entidades e DTOs
+├── model/                                # Entidades JPA (ex: Account)
+├── repository/                           # Interfaces JPA (ex: AccountRepository)
+├── service/                              # Interfaces de serviço
+├── service/impl/                         # Implementações de serviço
+└── util/                                 # Utilitários e helpers
+
 ```
 
 ## Pré-requisitos
