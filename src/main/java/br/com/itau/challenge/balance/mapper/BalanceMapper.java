@@ -8,14 +8,10 @@ import org.springframework.stereotype.Component;
 public class BalanceMapper {
 
     public BalanceResponse toDto(Account account) {
-        return BalanceResponse.builder()
-                .id(account.getId())
-                .owner(account.getOwner())
-                .updated_at(account.getUpdatedAt())
-                .balance(BalanceResponse.Amount.builder()
-                        .amount(account.getAmount())
-                        .currency(account.getCurrency())
-                        .build())
-                .build();
+        return new BalanceResponse(
+                account.getId(),
+                account.getOwner(),
+                new BalanceResponse.Amount(account.getAmount(), account.getCurrency()),
+                account.getUpdatedAt());
     }
 }

@@ -31,3 +31,9 @@ aws:
   accessKeyId: test
   secretAccessKey: test
   region: sa-east-1
+  
+logging:
+  level:
+    org.springdoc: DEBUG
+    software.amazon.awssdk: DEBUG
+    br.com.itau.challenge.balance.consumer: DEBUG
