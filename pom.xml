@@ -89,6 +89,11 @@
 			<artifactId>sqs</artifactId>
 			<version>2.25.64</version>
 		</dependency>
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>netty-nio-client</artifactId>
+			<version>2.25.64</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

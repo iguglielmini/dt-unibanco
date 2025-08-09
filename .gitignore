@@ -1,0 +1,23 @@
+# Compilados
+target/
+out/
+
+# Configurações locais de IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Arquivos temporários e logs
+*.log
+*.tmp
+*.swp
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Cache
+.mvn/wrapper/maven-wrapper.jar
