@@ -2,8 +2,10 @@
 /Users/user/Documents/italo/dt-unibanco/src/main/java/br/com/itau/challenge/balance/repository/AccountRepository.java
 /Users/user/Documents/italo/dt-unibanco/src/main/java/br/com/itau/challenge/balance/mapper/BalanceMapper.java
 /Users/user/Documents/italo/dt-unibanco/src/main/java/br/com/itau/challenge/balance/controller/BalanceController.java
+/Users/user/Documents/italo/dt-unibanco/src/main/java/br/com/itau/challenge/balance/exception/GlobalExceptionHandler.java
 /Users/user/Documents/italo/dt-unibanco/src/main/java/br/com/itau/challenge/balance/exception/NotFoundException.java
 /Users/user/Documents/italo/dt-unibanco/src/main/java/br/com/itau/challenge/balance/service/BalanceService.java
 /Users/user/Documents/italo/dt-unibanco/src/main/java/br/com/itau/challenge/balance/model/Account.java
+/Users/user/Documents/italo/dt-unibanco/src/main/java/br/com/itau/challenge/balance/config/OpenApiConfig.java
 /Users/user/Documents/italo/dt-unibanco/src/main/java/br/com/itau/challenge/balance/BalanceApplication.java
 /Users/user/Documents/italo/dt-unibanco/src/main/java/br/com/itau/challenge/balance/dto/BalanceResponse.java

@@ -83,10 +83,15 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+		<!-- AWS SQS -->
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>sqs</artifactId>
+			<version>2.25.64</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
-			<!-- Plugin do Spring Boot -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>

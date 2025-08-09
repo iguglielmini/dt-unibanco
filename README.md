@@ -29,6 +29,16 @@ src/main/java/br/com/itau/challenge/balance/
 - Maven 3.8+
 - Docker (opcional, para execução via docker-compose)
 
+## 📦 Como instalar e compilar o projeto
+
+Este projeto utiliza um arquivo `settings.xml` local para evitar dependências de configurações externas.
+
+Na **primeira instalação**, use o comando abaixo para garantir que o Maven utilize apenas os repositórios definidos localmente:
+
+```bash
+mvn -s .mvn/settings.xml clean install
+```
+
 ## Como executar
 
 ### Usando Maven
