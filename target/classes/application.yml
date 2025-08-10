@@ -1,3 +1,6 @@
+server:
+  port: 8080
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/balance_db
@@ -8,32 +11,26 @@ spring:
       ddl-auto: update
     show-sql: true
     properties:
-      hibernate:
-        format_sql: true
+      hibernate.format_sql: true
   jackson:
-    serialization:
-      write-dates-as-timestamps: false
+    serialization.write-dates-as-timestamps: false
   application:
     name: balance-api
 
-server:
-  port: 8080
-
 app:
   sqs:
+    endpoint: http://localhost:4566
     queue-url: http://localhost:4566/000000000000/transacoes-financeiras-processadas
     region: sa-east-1
-    endpoint: http://localhost:4566
     max-messages: 10
     wait-seconds: 10
 
 aws:
   accessKeyId: test
   secretAccessKey: test
-  region: sa-east-1
-  
+
 logging:
   level:
-    org.springdoc: DEBUG
+    org.springdoc: INFO
     software.amazon.awssdk: DEBUG
     br.com.itau.challenge.balance.consumer: DEBUG
