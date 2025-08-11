@@ -29,8 +29,24 @@ aws:
   accessKeyId: test
   secretAccessKey: test
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      probes:
+        enabled: true   # habilita /health/liveness e /health/readiness
+      show-details: never
+
+info:
+  app:
+    name: balance-api
+    description: API de consulta de saldo (desafio Itaú)
+
 logging:
   level:
     org.springdoc: INFO
-    software.amazon.awssdk: DEBUG
+    software.amazon.awssdk: DEBUG      # troque para INFO se ficar muito verboso
     br.com.itau.challenge.balance.consumer: DEBUG

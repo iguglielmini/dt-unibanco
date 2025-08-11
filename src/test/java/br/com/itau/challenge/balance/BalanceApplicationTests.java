@@ -1,13 +1,13 @@
-// package br.com.itau.challenge.balance;
+package br.com.itau.challenge.balance;
 
-// import org.junit.jupiter.api.Test;
-// import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-// @SpringBootTest
-// class BalanceApplicationTests {
+@SpringBootTest
+class BalanceApplicationTests {
 
-// 	@Test
-// 	void contextLoads() {
-// 	}
-
-// }
+    @Test
+    void contextLoads() {
+        // sobe o contexto do Spring; falha se algum bean crítico quebrar
+    }
+}
