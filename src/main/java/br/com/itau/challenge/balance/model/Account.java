@@ -1,27 +1,27 @@
 package br.com.itau.challenge.balance.model;
 
-import jakarta.persistence.*;
-import lombok.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @Entity
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
+@Getter @Setter
+@NoArgsConstructor
 public class Account {
 
-    @Id
-    private UUID id;
+  @Id
+  private UUID id;
 
-    private UUID owner;
+  private UUID owner;
+  private BigDecimal amount;
+  private String currency;
+  private OffsetDateTime updatedAt;
 
-    @Column(nullable = false)
-    private BigDecimal amount;
-
-    @Column(nullable = false)
-    private String currency;
-
-    @Column(name = "updated_at")
-    private OffsetDateTime updatedAt;
+  public Account(UUID id) { this.id = id; }
 }
